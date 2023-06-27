@@ -1,5 +1,5 @@
 
-## App - gestion de parking  🚗 🚙 🚗
+## Application - Gestion de parking  🚗 🚙 🚗
 
 ### Ce projet est une application de gestion de parking développée avec les technologies suivantes :
 
@@ -37,11 +37,14 @@ npm run start:server
 ```
 Le serveur sera accessible à http://localhost:3001
 
-Démarrer le client (depuis le dossier frontend)
+Démarrer l'application' (depuis le dossier frontend)
 ```bash
 npm run start:client
 ```
-Le client sera accessible à l'adresse http://localhost:3000
+
+>**L'application sera accessible à l'adresse:**
+>
+>http://localhost:3000
 
 ## Utilisation
 
