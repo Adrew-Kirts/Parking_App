@@ -1,0 +1,180 @@
+/* App.css */
+
+.App {
+  background-image: url('https://www.jll.co.kr/images/global/hong-kongs-pricey-parking-spaces-carpark-HK-reszied-teaser.jpg.rendition/cq5dam.web.1280.1280.jpeg');
+  background-size: cover;
+  background-position: center;
+  height: 800px;
+  padding-top: 30px;
+  text-align: center;
+}
+
+h1 {
+  color: rgb(250, 210, 100);
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+h4 {
+  color: black;
+  margin-top: -10px;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: rgb(250, 240, 150);
+  color: black;
+  border: black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+button:hover {
+  background-color: rgb(250, 210, 100);
+  color: black;
+}
+
+.parking-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.parking-grid-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parking-spot {
+  width: 30px;
+  height: 50px;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.parking-spot.occupied {
+  background-color: black;
+  color: yellow;
+}
+
+.parking-spot.empty {
+  background-color: white;
+}
+
+.spot-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.assignedPlace {
+  margin-top: 20px;
+  color: black;
+  font-weight: bold;
+}
+
+.content-wrapper {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  padding: 20px;
+  display: inline-block;
+  margin: 20px;
+}
+
+.reset-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 10px;
+  background-color: rgb(250, 240, 150);
+  color: black;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.reset-button:hover {
+  background-color: rgb(250, 210, 100);
+  color: black;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background-color: #e6e6e6;
+  padding: 20px;
+  border-radius: 8px;
+  max-height: 600px;
+  max-width: 400px;
+  text-align: center;
+  font-family: Monaco, monospace;
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.modal-message {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal-close-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #222222;
+}
+
+.parking-info {
+  background-color: rgb(136, 136, 136, 0.5);
+  padding: 10px;
+  margin-bottom: 20px;
+  color: rgb(250, 210, 100);
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 10px;
+}
