@@ -29,8 +29,9 @@ const App: React.FC = () => {
       const response = await axios.delete(`http://localhost:3001/api/tickets/${spotNumber}`);
       const { availablePlaces } = response.data;
 
-      alert(`Place numéro ${spotNumber} a été libérée`);
       setAvailablePlaces(availablePlaces);
+      setModalContent(`Place numéro ${spotNumber} a été libérée`);
+      setShowModal(true);
     } catch (error) {
       console.error('Error while releasing spot:', error);
     }
@@ -42,8 +43,7 @@ const App: React.FC = () => {
       const { placeNumber } = response.data;
 
       const timestamp = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-      const modalContent = `Bienvenue au parking\n\nL'heure d'entrée est ${timestamp}\n\n\n\n\n\n\nVotre numéro de place est :\n\n ${placeNumber}`;
-      setModalContent(modalContent);
+      setModalContent(`Bienvenue au parking\n\nL'heure d'entrée est ${timestamp}\n\n\n\n\n\n\nVotre numéro de place est :\n\n ${placeNumber}`);
       setShowModal(true);
       setAssignedSpot(placeNumber);
 
@@ -104,7 +104,7 @@ const App: React.FC = () => {
         <div className="parking-info">Places disponibles: {20 - availablePlaces.length}</div>
         <button onClick={handleDistributeTicket}>Ticket</button>
         {assignedSpot && (
-          <div className="assignedPlace">La place assignée est : {assignedSpot}</div>
+          <div className="assignedPlace">La dernière place assignée était le : {assignedSpot}</div>
         )}
       </div>
 

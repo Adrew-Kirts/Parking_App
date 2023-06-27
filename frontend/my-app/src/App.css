@@ -1,4 +1,3 @@
-/* App.css */
 
 .App {
   background-image: url('https://www.jll.co.kr/images/global/hong-kongs-pricey-parking-spaces-carpark-HK-reszied-teaser.jpg.rendition/cq5dam.web.1280.1280.jpeg');
@@ -149,7 +148,6 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
 
 .modal-message {
   font-size: 18px;
