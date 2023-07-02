@@ -48,7 +48,7 @@ export class AppController {
 
   @Delete('reset')
   async resetParkingApp() {
-    await this.ticketRepository.clear(); // Clear all ticket entries from the database
+    await this.ticketRepository.clear(); //Bouton reset - clear all 
     return 'Parking app has been reset';
   }
 

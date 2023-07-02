@@ -33,13 +33,13 @@ npm install
 ```
 Démarrer le serveur (depuis le dossier backend)
 ```bash
-npm run start:server
+npm run start (ou start:dev pour avoir --watch)
 ```
 Le serveur sera accessible à http://localhost:3001
 
 Démarrer l'application' (depuis le dossier frontend)
 ```bash
-npm run start:client
+npm run
 ```
 
 >**L'application sera accessible à l'adresse:**

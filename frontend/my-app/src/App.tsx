@@ -11,6 +11,7 @@ const App: React.FC = () => {
   useEffect(() => {
     fetchAvailablePlaces();
   }, []);
+  //MArche qu'une fois initiallement pour récupérer les places dispo
 
   const fetchAvailablePlaces = async () => {
     try {
